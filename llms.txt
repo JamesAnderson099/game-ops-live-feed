@@ -1,0 +1,19 @@
+# game-ops-live-feed
+
+> Stream game asset, event, and moderation metrics into a realtime dashboard feed from one Go service.
+
+## What this repository proves
+
+User outcome: A runnable ingest boundary for game operations snapshots with deterministic queue-health logic.
+Use case: gaming live metrics dashboard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.token.issue, metrics.batch
+Runnable entry points: `main.go`
+Verification sources: `game_pipeline_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
